@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio Aziz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <h2 class="logo">Aziz<span>Dev</span></h2>
+    <ul>
+      <li><a href="#about">Tentang</a></li>
+      <li><a href="#skills">Keahlian</a></li>
+      <li><a href="#projects">Projek</a></li>
+      <li><a href="#contact">Kontak</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Halo, saya <span>Aziz</span></h1>
+    <p>Mahasiswa & Calon Web Developer 🚀</p>
+    <button onclick="sayHello()">Sapa Saya</button>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <h2>Tentang Saya</h2>
+    <p>Saya adalah mahasiswa Administrasi Bisnis yang suka belajar coding, bisnis, dan teknologi.</p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Keahlian</h2>
+    <ul>
+      <li>HTML, CSS, JavaScript</li>
+      <li>Node.js (belajar on going)</li>
+      <li>Copywriting & Bisnis</li>
+    </ul>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Projek Saya</h2>
+    <div class="card">
+      <h3>Bluemood Coffee</h3>
+      <p>Bisnis kopi botolan dengan slogan <i>“Balikin mood lo”</i>.</p>
+    </div>
+    <div class="card">
+      <h3>BLUcycle</h3>
+      <p>Toko kebutuhan sepeda sebagai bagian dari komunitas BLUE.</p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Kontak Saya</h2>
+    <form onsubmit="return sendMessage(event)">
+      <input type="text" id="nama" placeholder="Nama" required>
+      <input type="email" id="email" placeholder="Email" required>
+      <textarea id="pesan" placeholder="Tulis pesan..." required></textarea>
+      <button type="submit">Kirim</button>
+    </form>
+    <p id="status"></p>
+  </section>
+
+  <footer>
+    <p>© 2025 AzizDev. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
